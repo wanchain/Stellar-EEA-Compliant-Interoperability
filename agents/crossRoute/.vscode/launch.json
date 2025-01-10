@@ -1,0 +1,35 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      // "program": "${file}",
+      "program": "${workspaceFolder}\\agent\\agent.test.js",
+      "env": {
+        "NODE_PATH": ".",
+
+        "PRIVATE_KEY": "",
+      },
+      "args": [
+        "--agentaddr",
+        "0x5c770cbf582d770b93ca90adad7e6bd33fabc44c",
+        "--pkg",
+        "false",
+        "--leader",
+        "--testnet",
+      ],
+      "outFiles": [
+        "${workspaceFolder}/**/*.js"
+      ],
+      "console": "integratedTerminal",
+    }
+  ]
+}

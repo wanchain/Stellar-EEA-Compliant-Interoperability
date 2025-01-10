@@ -1,0 +1,11 @@
+.DS_Store
+.idea
+target
+Cargo.lock
+
+
+# bridge
+/bridge/rootCA-key.pem
+/bridge/rootCA.pem
+/bridge/node_modules/
+/bridge/yarn.lock
